@@ -10,15 +10,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { Provider } from 'react-redux';
+import newStore from './redux/store';
 
 //Definimos una variable "root" que contiene el div con id "root" del archivo html principal.
 //Utilizamos el metodo "render" de "ReactDOM" para poder renderizar nuestro componente principal "App".
 //Mediante llaves en modo estricto de React llamararemos el componete de renderizado principal "App".
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={newStore}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>
 );
 
 
