@@ -6,7 +6,7 @@
 //Importamos el hook de estado "useState" que se encarga de actualizar las variables que indiquemos. 
 //Importamos el componente "Header" que se encarga de manterner el header durante todas las "slides".
 //Importamos el componente "Slider" que contiente todos los demás componentes de la aplicación.
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header/Header";
 import Slider from "./components/Slider/Slider";
 
@@ -16,16 +16,10 @@ import Slider from "./components/Slider/Slider";
 //Definimos una variable "useState" con el parámetro previous y la función "setPrevious" (inicialización en "page"). 
 //este estado guardará la "slide" anterior a la actual para poder manejar la dirección del slide (transiciones).
 function App() {
-  const [page, setPage] = useState(1);
-  const [previous, setPrevious] = useState(page);
 
   //Definimos una función de flecha que recibe por parámetro la nueva "slide" a la que debe ir la aplicación. 
   //Reconfiguramos la variable previous anterior con la variable page para que se guarde la "slide" anterior.
   //Reconfiguramos la variable page anterior con la variable newPage para que guarde la nueva "slide".
-  const onChangePage = (newPage) => {
-    setPrevious(page);
-    return setPage(newPage);
-  }
 
   //Retornamos en formato html los componentes que queremos renderizar de la aplicación. 
   //Inicializamos los componentes generales de la aplicación, la propiedad page para que sepa a qué "slide"
@@ -33,8 +27,8 @@ function App() {
   //"slide" a la que nos encontramos y la propiedad previous que nos indica de que "slide" provenimos. 
   return (
     <div className="App">
-    <Header page={page} onChangePage={onChangePage} />
-    <Slider page={page} onChangePage={onChangePage} previous={previous} />
+    <Header />
+    <Slider />
     </div>
   );
 }

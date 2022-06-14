@@ -11,13 +11,17 @@ import React, { useState } from 'react';
 import End from '../End/End.jsx';
 import '../../assets/uicons/css/uicons-regular-rounded.css';
 import './Academic.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { changePage } from '../../redux/page/page.actions';
 
 //Definimos una función flecha con los parámetros "onChangePage" y "previous" para que al presionar
 //el botón triangulo se reciba por parámetro la nueva "slide" a la que debe ir la aplicación y 
 //también cambiemos de página mediante un efecto de deslizamionto de la "slide" anterior. 
 //Definimos una variable "useState" con el parámetro "leave" y la función "setLeave" (inicialización en "0"). 
 //este estado activará la classe que contiene la animación de deslizamiento según entre o salga la "slide".
-const Academic = ({onChangePage, previous}) => {
+const Academic = () => {
+  const dispatch = useDispatch();                         // es una forma distinta para obtener el dispatch en vez de usar connect
+  const {previous} = useSelector(state => state);
   const [leave, setLeave] = useState(0);
   //Definimos una función flecha y le configuramos el estado en 1 ("slide" saliendo izquierda).
   const onClickLeft = () => {
@@ -26,7 +30,7 @@ const Academic = ({onChangePage, previous}) => {
     //Como estamos en "Academic" (3) le assignamos el cambio de página a "Summary" (2).
     //Realizamos un timeout para que la "slide" tenga tiempo de hacer el deslizamiento.
     setTimeout(() => {
-      onChangePage(2);
+      dispatch(changePage(2));
       setLeave(0);
     }, 450);
   };
@@ -37,7 +41,7 @@ const Academic = ({onChangePage, previous}) => {
     //Como estamos en "Academic" (3) le assignamos el cambio de página a "Experience" (4).
     //Realizamos un timeout para que la "slide" tenga tiempo de hacer el deslizamiento.
     setTimeout(() => {
-      onChangePage(4);
+      dispatch(changePage(4));
       setLeave(0);
     }, 450);
   };

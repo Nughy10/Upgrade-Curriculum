@@ -14,47 +14,50 @@ import Licences from '../Licences/Licences';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 
+import { useSelector } from 'react-redux';
+
 //Definimos una función flecha con los parámetros "page", "onChangePage" y "previous" 
 //para poder pasarlos como propiedades (props) a las diferentes "slides" (excepto "page").
 //Definimos un "Switch Case" que dependerá de la "slide" en la que nos encontremos (page).
-const Slider = ({page, onChangePage, previous }) => {
+const Slider = () => {
+    const {page} = useSelector(state => state) 
     switch (page) {
         case 1:
             return (
-                <Home onChangePage={onChangePage} previous={previous} />
+                <Home />
             );
         case 2:
             return (
-                <Summary onChangePage={onChangePage} previous={previous} />
+                <Summary />
             );
         case 3:
             return (
-                <Academic onChangePage={onChangePage} previous={previous} />
+                <Academic />
             );
         case 4:
             return (
-                <Experience onChangePage={onChangePage} previous={previous} />
+                <Experience />
             );
         case 5:
             return (
-                <Skills onChangePage={onChangePage} previous={previous} />
+                <Skills />
             );
         case 6:
             return (
-                <Licences onChangePage={onChangePage} previous={previous} />
+                <Licences />
             );
         case 7:
             return (
-                <Projects onChangePage={onChangePage} previous={previous} />
+                <Projects />
             );
         case 8:
             return (
-                <Contact onChangePage={onChangePage} previous={previous} />
+                <Contact />
             );
 
         default:
             return (
-                <Home  onChangePage={onChangePage} previous={previous} />
+                <Home  />
             );
     }
 }
