@@ -1,0 +1,58 @@
+@keyframes colors {
+    0% {
+        color: rgb(253, 61, 61);
+    }
+    20% {
+        color: rgb(243, 127, 32);
+    }
+    40% {
+        color: rgb(231, 245, 40);
+    }
+    60% {
+        color: rgb(65, 243, 49);
+    }
+    80% {
+        color: rgb(250, 62, 241);
+    }
+    100% {
+        color: rgb(253, 61, 61);
+    }
+}
+
+#container2{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background: transparent;
+    margin-top: 65px; 
+
+    &__anim{
+        display: flex; 
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    &__info{ 
+        color: white; 
+        background: transparent;
+        &.color-anim {
+            animation: colors 4s linear infinite;
+            margin-right: 10px; 
+        }
+    }
+
+    h1{
+        font-size:42px;
+    }
+    h6{
+        font-size:16px;
+        margin-top: 60px;
+        margin-bottom: 60px; 
+    }
+    h3{
+        font-size:26px;
+        margin-bottom: 10px; 
+    }
+
+}
+

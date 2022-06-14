@@ -1,0 +1,37 @@
+
+#container1{
+
+    &__list{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+    list-style: none; 
+    background: transparent;
+    margin-top: 35px;
+    margin-right: 50px;
+    }
+
+    li{
+        background: transparent;
+    }
+
+    .statichome{ 
+        font-weight: bolt; 
+        color: rgb(55, 134, 252);
+        font-size: 22px; 
+        background: transparent;
+        cursor: pointer; 
+    }
+    
+    .smoothscroll{ 
+        text-decoration: none; 
+        font-weight: bold; 
+        color: white; 
+        font-size: 14px; 
+        background: transparent;
+        cursor: pointer; 
+    }
+}
+
+

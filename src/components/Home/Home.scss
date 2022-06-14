@@ -1,0 +1,79 @@
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+    filter: blur(4px);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-left {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(4px);
+
+
+  }
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0.25;
+    filter: blur(4px);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+.in-left {
+  animation: slide-in-left 0.6s ease-in;
+}
+.in-right {
+  animation: slide-in-right 0.6s ease-in;
+}
+.out-left {
+  animation: slide-out-left 0.6s ease-in;
+}
+.out-right {
+  animation: slide-out-right 0.6s ease-in;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    background-image: url(../../assets/images/footer.jpg);
+    background-size: cover;
+}
+
+#rbutton {
+    color: white;
+    position: absolute; 
+    top: 300px; 
+    right: 30px;
+    font-size: 25px; 
+    cursor: pointer; 
+}

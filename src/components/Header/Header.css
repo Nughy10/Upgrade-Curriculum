@@ -1,0 +1,40 @@
+#container1__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  background: transparent;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+#container1 li {
+  background: transparent;
+}
+
+#container1 .statichome {
+  font-weight: bolt;
+  color: #3786fc;
+  font-size: 22px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#container1 .smoothscroll {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Header.css.map */

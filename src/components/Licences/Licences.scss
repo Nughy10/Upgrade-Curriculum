@@ -1,0 +1,131 @@
+#container9 {
+    &__background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    background-image: url("../../assets/images/footer.jpg");
+    background-size: cover;
+    }
+    
+    &__cover {
+      position: fixed;
+      min-width: 100%;
+      min-height: 82%;
+      background-color: white;
+      z-index: -1;
+      opacity: 0.4;
+    }    
+
+    &__licences{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 420px;
+      padding-top: 30px;  
+      margin-left: -150px; 
+      }
+
+    &__br {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__abb {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__kuka {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__fanuc {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__siemens {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__french {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__italian {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__english {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    &__french {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__exchange {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    &__date {
+      padding: 5px 10px;
+    }
+
+    &__circle {
+      padding: 0px 10px;
+      border-top: 1px solid rgb(55, 134, 252);
+      border-right: 1px solid rgb(55, 134, 252);
+      border-bottom: 1px solid rgb(55, 134, 252);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      p{
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+      }
+    }
+
+    &__title h3 {
+      margin-bottom: 10px;
+    }
+
+    &__school {
+      display: flex;
+      flex-direction: row;
+      h4 {
+        margin-top: 12px;
+      }
+      p {
+        margin-top: 12px;
+        margin-left: 5px;
+      }
+    }
+}
+
+#rbutton {
+    color: white;
+    position: absolute; 
+    top: 300px; 
+    right: 30px;
+    font-size: 25px; 
+    cursor: pointer; 
+  }
+  
+  #lbutton {
+    color: white;
+    position: absolute; 
+    top: 300px; 
+    left: 30px;
+    font-size: 25px; 
+    cursor: pointer; 
+  }

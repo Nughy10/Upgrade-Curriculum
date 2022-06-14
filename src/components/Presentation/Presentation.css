@@ -1,0 +1,96 @@
+@-webkit-keyframes colors {
+  0% {
+    color: #fd3d3d;
+  }
+  20% {
+    color: #f37f20;
+  }
+  40% {
+    color: #e7f528;
+  }
+  60% {
+    color: #41f331;
+  }
+  80% {
+    color: #fa3ef1;
+  }
+  100% {
+    color: #fd3d3d;
+  }
+}
+
+@keyframes colors {
+  0% {
+    color: #fd3d3d;
+  }
+  20% {
+    color: #f37f20;
+  }
+  40% {
+    color: #e7f528;
+  }
+  60% {
+    color: #41f331;
+  }
+  80% {
+    color: #fa3ef1;
+  }
+  100% {
+    color: #fd3d3d;
+  }
+}
+
+#container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  margin-top: 65px;
+}
+
+#container2__anim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container2__info {
+  color: white;
+  background: transparent;
+}
+
+#container2__info.color-anim {
+  -webkit-animation: colors 4s linear infinite;
+          animation: colors 4s linear infinite;
+  margin-right: 10px;
+}
+
+#container2 h1 {
+  font-size: 42px;
+}
+
+#container2 h6 {
+  font-size: 16px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#container2 h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Presentation.css.map */
