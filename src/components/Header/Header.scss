@@ -32,6 +32,18 @@
         background: transparent;
         cursor: pointer; 
     }
+    .smoothscroll:hover{ 
+        font-size: 22px;
+
+    }
+    @keyframes bounce1 {
+        20% {
+          transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
 }
 
 

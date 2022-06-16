@@ -37,4 +37,30 @@
   background: transparent;
   cursor: pointer;
 }
+
+#container1 .smoothscroll:hover {
+  font-size: 22px;
+}
+
+@-webkit-keyframes bounce1 {
+  20% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes bounce1 {
+  20% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
 /*# sourceMappingURL=Header.css.map */

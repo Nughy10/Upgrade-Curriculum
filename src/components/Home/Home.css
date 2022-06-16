@@ -157,4 +157,21 @@
   font-size: 25px;
   cursor: pointer;
 }
+
+#lbutton {
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#rbutton:hover {
+  color: #3786fc;
+}
+
+#lbutton:hover {
+  color: #3786fc;
+}
 /*# sourceMappingURL=Home.css.map */

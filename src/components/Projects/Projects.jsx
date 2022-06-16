@@ -7,21 +7,25 @@
 //Importamos el componente "End" creado en la carpeta src/componentes/End.
 //Importamos los diferentes icones en su formato correspondiente de la carpeta src/assets. 
 //Importamos el archivo de diseño "Projects" creado en la carpeta src/components/Projects.
+//La función "useDispatch" es una función de "redux" que se encarga de enviar los atributos al "reducer".
+//La función "useSelector" es una función de "redux" que se encarga de proporcionarnos el estado de página actu
 import React, { useState } from 'react';
 import End from '../End/End.jsx';
-import projectImage from '../../assets/images/header-0.jpg';
+import projectLaser from '../../assets/images/laser.gif';
+import projectSorry from '../../assets/images/sorry.jpg'
 import '../../assets/uicons/css/uicons-regular-rounded.css';
 import './Projects.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { changePage } from '../../redux/page/page.actions';
 
-//Definimos una función flecha con los parámetros "onChangePage" y "previous" para que al presionar
-//el botón triangulo se reciba por parámetro la nueva "slide" a la que debe ir la aplicación y 
-//también cambiemos de página mediante un efecto de deslizamionto de la "slide" anterior. 
+//Definimos una función flecha para que al presionar el botón triangulo se reciba por parámetro la nueva "slide".
+//Definimos una función flecha para que al escojer una opción de menú se reciba por parámetro la nueva "slide".
+//Definimos una variable con la función "useDispatch" de "redux" para poder enviar los atributos al "reducer".
+//Definimos un objeto que recibirá la función "useSelector" que nos proporcionará el estado de página anterior (destructuring).
 //Definimos una variable "useState" con el parámetro "leave" y la función "setLeave" (inicialización en "0"). 
 //este estado activará la classe que contiene la animación de deslizamiento según entre o salga la "slide".
 const Projects = () => {
-  const dispatch = useDispatch();                         // es una forma distinta para obtener el dispatch en vez de usar connect
+  const dispatch = useDispatch();                         
   const {previous} = useSelector(state => state);
   const [leave, setLeave] = useState(0);
   //Definimos una función flecha y le configuramos el estado en 1 ("slide" saliendo izquierda).
@@ -69,7 +73,7 @@ const Projects = () => {
           {/* Definimos el los contenedores con la información del aprtado "Projects" */}
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}} >
           <div id="container10__project">
-            <img id="container10__image" src={projectImage} alt="" />
+            <img id="container10__image" src={projectLaser} alt="" />
             <div id="container10__hover">
               <h3>LASER "LIGHT SHOW"</h3>
               <p>Design and implementation of a laser connected to two galvanometric motors controlled by 
@@ -78,33 +82,87 @@ const Projects = () => {
             </div>
           </div>
           </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
+          <a href="https://es.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
           <div id="container10__project">
-            
+          <img id="container10__image" src={projectSorry} alt="" />
+            <div id="container10__hover">
+              <h3>PROJECT NO AVALIABLE</h3>
+              <p>The project is not uploaded or done at the moment. Sorry for the inconvenience.</p>
+            </div>
           </div>
+          </a>
         </div>
         {/* Definimos el botón derecho y izquierdo que nos permitiran movernos por las "slides" */}
         {/*"End" es el componente de footer que se renderizá dentro de "Projects" */}

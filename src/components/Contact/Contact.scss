@@ -14,7 +14,7 @@
     &__contact{
       display: flex; 
       flex-direction: row;
-      margin-bottom: -35px;
+      margin-bottom: -15px;
     }
 
     &__profile{
@@ -34,21 +34,61 @@
         width: 350px; 
         height: auto;
         border-radius: 400px; 
+        border: 2px solid rgb(55, 134, 252);
       }
     }
 
     &__links{
+      display: flex; 
+      flex-direction: row; 
       padding-top: 10px; 
       img{
         width: 30px; 
         height: 30px;
       }
     }
-    
-    &__links div{
+
+    &__pdf {
+      display: flex; 
+      flex-direction: column; 
+      a {
+        padding-top: 25px; 
+        padding-left: 200px;
+        button {
+          width: 120px; 
+          height: 50px; 
+          border-radius: 50px; 
+          border: 1px solid rgb(55, 134, 252);
+          font-family: monaco, Consolas, Lucida Console, monospace; 
+          background-color: black;
+          color: white; 
+          cursor: pointer; 
+        }
+
+        button:hover{
+          animation: bounce3 2.0s;
+        }
+      }
+    }
+    @keyframes bounce3 {
+      20% {
+        transform: translateY(-3px);
+      }
+      40% {
+        transform: translateY(0px);
+      }
+      60% {
+        transform: translateY(-1px);
+      }
+      80% {
+        transform: translateY(0px);
+      }
+  }
+
+    &__src div{
       display: flex; 
       flex-direction: row;
-      padding-left: 220px; 
+      padding-left: 25px; 
       padding-top: 10px; 
       align-items: center; 
       p{
@@ -93,7 +133,7 @@
           height: 26px; 
           font-size: 12px;
           padding-left: 5px; 
-          font-family: monaco, Consolas, Lucida Console, monospace;;
+          font-family: monaco, Consolas, Lucida Console, monospace;
         }
     }
 

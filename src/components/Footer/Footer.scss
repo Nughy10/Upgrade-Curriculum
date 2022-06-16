@@ -14,5 +14,16 @@
         height: 30px;
         background: transparent;
     }
+    img:hover{
+        animation: bounce2 2.0s;
+    }
     }   
+    @keyframes bounce2 {
+        20% {
+          transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
 }

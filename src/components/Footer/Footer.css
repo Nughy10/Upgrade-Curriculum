@@ -24,4 +24,31 @@
   height: 30px;
   background: transparent;
 }
+
+#container3__icon img:hover {
+  -webkit-animation: bounce2 2.0s;
+          animation: bounce2 2.0s;
+}
+
+@-webkit-keyframes bounce2 {
+  20% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes bounce2 {
+  20% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

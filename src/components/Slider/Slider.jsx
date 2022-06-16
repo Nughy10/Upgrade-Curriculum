@@ -4,6 +4,7 @@
 
 //Importamos la libreria React que se encarga su configuración, todos los archivos JSX deben tenerlo.
 //Importamos TODAS las variables que tienen como referencia una "slide" individual. 
+//La función "useSelector" es una función de "redux" que se encarga de proporcionarnos el estado de página actual.
 import React from 'react';
 import Home from '../Home/Home';
 import Summary from '../Summary/Summary';
@@ -13,11 +14,10 @@ import Skills from '../Skills/Skills';
 import Licences from '../Licences/Licences';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
-
 import { useSelector } from 'react-redux';
 
-//Definimos una función flecha con los parámetros "page", "onChangePage" y "previous" 
-//para poder pasarlos como propiedades (props) a las diferentes "slides" (excepto "page").
+//Definimos una función flecha y definimos un objeto que recibirá la función "useSelector" 
+//que nos proporcionará el estado de página actual (destructuring) de la aplicación. 
 //Definimos un "Switch Case" que dependerá de la "slide" en la que nos encontremos (page).
 const Slider = () => {
     const {page} = useSelector(state => state) 

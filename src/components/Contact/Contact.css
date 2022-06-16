@@ -17,7 +17,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: -35px;
+  margin-bottom: -15px;
 }
 
 #container11__profile {
@@ -50,9 +50,17 @@
   width: 350px;
   height: auto;
   border-radius: 400px;
+  border: 2px solid #3786fc;
 }
 
 #container11__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding-top: 10px;
 }
 
@@ -61,7 +69,76 @@
   height: 30px;
 }
 
-#container11__links div {
+#container11__pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container11__pdf a {
+  padding-top: 25px;
+  padding-left: 200px;
+}
+
+#container11__pdf a button {
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #3786fc;
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#container11__pdf a button:hover {
+  -webkit-animation: bounce3 2.0s;
+          animation: bounce3 2.0s;
+}
+
+@-webkit-keyframes bounce3 {
+  20% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  60% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  80% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce3 {
+  20% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  60% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  80% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+#container11__src div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,14 +146,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 220px;
+  padding-left: 25px;
   padding-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#container11__links div p {
+#container11__src div p {
   font-size: 14px;
   color: white;
   padding-left: 10px;

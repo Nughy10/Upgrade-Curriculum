@@ -3,15 +3,18 @@
 //Header.jsx -> Componente menú principal de la aplicación (Home).
 
 //Importamos el archivo de diseño "Header" creado en la carpeta src/components/Header.
+//Importamos la libreria "Redux" que se ecarga de gestionar el estado de las aplicaciones (objeto omnipresente). 
+//La función "useDispatch" es una función de "redux" que se encarga de enviar los atributos al "reducer".
+//La función "useSelector" es una función de "redux" que se encarga de proporcionarnos el estado de página actual. 
 import "./Header.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { changePage } from '../../redux/page/page.actions';
 
-
-//Definimos una función flecha con los parámetros "page" y "onChangePage" para que al escojer
-//una opción de menu se reciba por parámetro la nueva "slide" a la que debe ir la aplicación.
+//Definimos una función flecha para que al escojer una opción de menú se reciba por parámetro la nueva "slide".
+//Definimos una variable con la función "useDispatch" de "redux" para poder enviar los atributos al "reducer".
+//Definimos un objeto que recibirá la función "useSelector" que nos proporcionará el estado de página actual (destructuring).
 const Header = () => {
-    const dispatch = useDispatch();                         // es una forma distinta para obtener el dispatch en vez de usar connect
+    const dispatch = useDispatch();                         
     const {page} = useSelector(state => state) 
 
     //Definimos una función "Home" para redireccionarnos si escoquemos esta opción y lo retornamos. 
